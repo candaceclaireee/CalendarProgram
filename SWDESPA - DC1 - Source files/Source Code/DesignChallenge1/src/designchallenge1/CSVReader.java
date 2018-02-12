@@ -9,7 +9,7 @@ public class CSVReader extends DataReader {
 	
 	public void readData(){
 		try {
-			File f = new File("src\\SampleFiles\\PhilippineHolidays.csv");
+			File f = new File("Sample Files\\Philippine Holidays.csv");
 			FileReader fr = new FileReader(f);
 			BufferedReader br = new BufferedReader(fr);
 		
