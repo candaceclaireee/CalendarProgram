@@ -1,20 +1,18 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package designchallenge1;
 
-/**
- *
- * @author Arturo III
- */
+import DesignChallenge1.CSVReader;
+import DesignChallenge1.CalendarProgram;
+import DesignChallenge1.PSVReader;
+
 public class DesignChallenge1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+    
+    	CSVReader cr = new CSVReader();
+    	cr.parseData();
+    	PSVReader pr = new PSVReader();
+    	pr.parseData();
+    	
         CalendarProgram cp = new CalendarProgram();
     }
 }
