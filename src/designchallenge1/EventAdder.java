@@ -28,7 +28,7 @@ public class EventAdder extends JFrame implements ActionListener {
     	frmEvent.setSize(400, 450);
     	frmEvent.setResizable(false);
     	frmEvent.setVisible(true);
-    	frmEvent.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    	frmEvent.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     	
     	init();
     }
