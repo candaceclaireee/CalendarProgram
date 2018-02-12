@@ -1,5 +1,7 @@
 package designchallenge1;
 
+import facebook.FBView;
+
 public class DesignChallenge1 {
 
     public static void main(String[] args) {
@@ -10,5 +12,6 @@ public class DesignChallenge1 {
     	pr.parseData();
     	
         CalendarProgram cp = new CalendarProgram();
+        FBView fb = new FBView();
     }
 }
