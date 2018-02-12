@@ -9,7 +9,7 @@ public class PSVReader extends DataReader{
 	
 	public void readData() {
 		try {
-			File f = new File("src\\\\sample_files\\\\DLSU Unicalendar.psv");
+			File f = new File("src\\sample_files\\DLSU Unicalendar.psv");
 			FileReader fr = new FileReader(f);
 			BufferedReader br = new BufferedReader(fr);
 		
@@ -61,4 +61,5 @@ public class PSVReader extends DataReader{
 			
 		}
 	}
+	
 }

@@ -97,12 +97,30 @@ public class EventAdder extends JFrame implements ActionListener {
 		}
     }
 
-	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		eventPanel.add(invalidLabel);
+		
+		if (titleField.getText().equals(""))
+			eventPanel.add(invalidLabel);
 		invalidLabel.setBounds(40,250, 200,150);
 		eventPanel.setVisible(true);
-		System.out.println("Recognized");
+		
+		String title = titleField.getText();
+		String day = cmbDay.getSelectedItem().toString();
+		String month = cmbMonth.getSelectedItem().toString();
+		String year = cmbYear.getSelectedItem().toString();
+		String color = cmbColor.getSelectedItem().toString();
+		
+		Event newevent = new Event(Integer.parseInt(month), Integer.parseInt(day), Integer.parseInt(year));
+		newevent.setTitle(title);
+		newevent.setColor(color.toLowerCase());	
+		
+		Events evt = new Events(); 
+		evt.addEvent(newevent);
+		int index = evt.getIndex(newevent);
+		
+		CSVReader csv = new CSVReader(); 
+		csv.writeData(index);
+		
+		frmEvent.dispose();
 	}
 }

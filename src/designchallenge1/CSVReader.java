@@ -6,6 +6,7 @@ import java.io.*;
 public class CSVReader extends DataReader {
 
 	static ArrayList<String[]> lines = new ArrayList<String[]>();
+	static Events events = new Events();
 	
 	public void readData(){
 		try {
@@ -54,4 +55,36 @@ public class CSVReader extends DataReader {
 			}
 		}
 	}	
+	
+	
+	public static void writeData(int index) {
+
+		String filepath = "src\\sample_files\\PhilippineHolidays.csv";
+		BufferedWriter bw = null;
+		BufferedReader br = null;
+		String line = null;
+		
+		try {
+			FileWriter fw = new FileWriter(filepath, true);
+			bw = new BufferedWriter(fw);
+			
+			line = events.getEvents().get(index).getMonth() + "/" + events.getEvents().get(index).getDay() + "/" + events.getEvents().get(index).getYear() + "," 
+					+ events.getEvents().get(index).getTitle() + "," + events.getEvents().get(index).getColor();
+				
+			bw.write(line);
+			bw.write(System.getProperty("line.separator"));
+				
+		} catch(IOException e) {
+			e.printStackTrace();
+			
+		} finally {
+			if(bw != null) {
+				try {
+					bw.close();
+				} catch(IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
 }

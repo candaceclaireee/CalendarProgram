@@ -19,6 +19,10 @@ public class Events{
 		return events.size();
 	}
 	
+	public int getIndex(Event e) {
+		return events.indexOf(e);
+	}
+	
 	public void printEvents() {
 		for (int i = 0; i<events.size(); i++)
 		{
