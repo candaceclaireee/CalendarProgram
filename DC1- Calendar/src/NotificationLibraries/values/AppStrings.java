@@ -1,4 +1,4 @@
-package values;
+package AppStrings;
 
 public enum AppStrings {
 	NOEVENTS;
