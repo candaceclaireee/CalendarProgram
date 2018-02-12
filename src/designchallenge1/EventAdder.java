@@ -1,12 +1,12 @@
 package designchallenge1;
 
-import java.awt.Container;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-public class EventAdder extends JFrame implements ActionListener{
+public class EventAdder extends JFrame implements ActionListener {
 
     Date d = new Date();
     
@@ -15,7 +15,7 @@ public class EventAdder extends JFrame implements ActionListener{
 	public Container pane;
 	
     public JTextField titleField;
-	public JLabel titleLabel, dateLabel, colorLabel;
+	public JLabel titleLabel, dateLabel, colorLabel, invalidLabel;
 	
 	public JButton btnAdd;
     public JComboBox<String> cmbDay, cmbMonth, cmbYear, cmbColor;
@@ -40,8 +40,10 @@ public class EventAdder extends JFrame implements ActionListener{
 		
 		titleField = new JTextField("");
 		titleLabel = new JLabel("Event Name");
-		dateLabel = new JLabel("Date");
+		dateLabel = new JLabel("Date (mm-dd-yyyy)");
 		colorLabel = new JLabel("Color");
+		invalidLabel = new JLabel("Invalid input of date.");
+		invalidLabel.setForeground(Color.RED);
 		cmbDay = new JComboBox();
 		cmbMonth = new JComboBox();
 		cmbYear = new JComboBox();
@@ -57,8 +59,8 @@ public class EventAdder extends JFrame implements ActionListener{
 		eventPanel.add(titleLabel);
 		eventPanel.add(dateLabel);
 		eventPanel.add(colorLabel);
-		eventPanel.add(cmbDay);
 		eventPanel.add(cmbMonth);
+		eventPanel.add(cmbDay);
 		eventPanel.add(cmbYear);
 		eventPanel.add(cmbColor);
 		
@@ -69,8 +71,8 @@ public class EventAdder extends JFrame implements ActionListener{
 		titleLabel.setBounds(40,30, 100, 150);
 		dateLabel.setBounds(40,100, 100,150);
 		colorLabel.setBounds(40,170, 100,150);
-		cmbDay.setBounds(160, 150, 80, 50);
-		cmbMonth.setBounds(220, 150, 90, 50);
+		cmbMonth.setBounds(160, 150, 90, 50);
+		cmbDay.setBounds(220, 150, 80, 50);
 		cmbYear.setBounds(280, 150, 80, 50);
 		cmbColor.setBounds(170, 220, 180,40);
 		
@@ -98,6 +100,9 @@ public class EventAdder extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		
+		eventPanel.add(invalidLabel);
+		invalidLabel.setBounds(40,250, 200,150);
+		eventPanel.setVisible(true);
+		System.out.println("Recognized");
 	}
 }
