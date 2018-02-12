@@ -15,7 +15,7 @@ public class EventAdder extends JFrame implements ActionListener {
 	public Container pane;
 	
     public JTextField titleField;
-	public JLabel titleLabel, dateLabel, colorLabel, invalidLabel;
+	public JLabel titleLabel, dateLabel, colorLabel, invalidDateLabel, noTitleLabel;
 	
 	public JButton btnAdd;
     public JComboBox<String> cmbDay, cmbMonth, cmbYear, cmbColor;
@@ -42,8 +42,10 @@ public class EventAdder extends JFrame implements ActionListener {
 		titleLabel = new JLabel("Event Name");
 		dateLabel = new JLabel("Date (mm-dd-yyyy)");
 		colorLabel = new JLabel("Color");
-		invalidLabel = new JLabel("Invalid input of date.");
-		invalidLabel.setForeground(Color.RED);
+		invalidDateLabel = new JLabel("Invalid input of date.");
+		invalidDateLabel.setForeground(Color.RED);
+		noTitleLabel = new JLabel("Cannot have an empty title.");
+		noTitleLabel.setForeground(Color.RED);
 		cmbDay = new JComboBox();
 		cmbMonth = new JComboBox();
 		cmbYear = new JComboBox();
@@ -63,7 +65,7 @@ public class EventAdder extends JFrame implements ActionListener {
 		eventPanel.add(cmbDay);
 		eventPanel.add(cmbYear);
 		eventPanel.add(cmbColor);
-		
+
 		eventPanel.add(btnAdd);
 		
 		eventPanel.setBounds(0, 00, 380, 700);
@@ -95,32 +97,81 @@ public class EventAdder extends JFrame implements ActionListener {
 		for (int i=0; i<colors.length; i++){
 			cmbColor.addItem(String.valueOf(colors[i]));
 		}
+
+		cmbYear.setSelectedIndex(100);
     }
 
 	public void actionPerformed(ActionEvent e) {
-		
-		if (titleField.getText().equals(""))
-			eventPanel.add(invalidLabel);
-		invalidLabel.setBounds(40,250, 200,150);
-		eventPanel.setVisible(true);
-		
-		String title = titleField.getText();
-		String day = cmbDay.getSelectedItem().toString();
-		String month = cmbMonth.getSelectedItem().toString();
-		String year = cmbYear.getSelectedItem().toString();
-		String color = cmbColor.getSelectedItem().toString();
-		
-		Event newevent = new Event(Integer.parseInt(month), Integer.parseInt(day), Integer.parseInt(year));
-		newevent.setTitle(title);
-		newevent.setColor(color.toLowerCase());	
-		
-		Events evt = new Events(); 
-		evt.addEvent(newevent);
-		int index = evt.getIndex(newevent);
-		
-		CSVReader csv = new CSVReader(); 
-		csv.writeData(index);
-		
-		frmEvent.dispose();
+		if (titleField.getText().isEmpty()) {
+			eventPanel.add(noTitleLabel);
+			noTitleLabel.setBounds(40, 250, 150, 150);
+			eventPanel.setVisible(true);
+
+		} else {
+			String title = titleField.getText();
+			int day = Integer.parseInt(cmbDay.getSelectedItem().toString());
+			int month = Integer.parseInt(cmbMonth.getSelectedItem().toString());
+			int year = Integer.parseInt(cmbYear.getSelectedItem().toString());
+			String color = cmbColor.getSelectedItem().toString();
+
+			boolean validation = dateChecker(month, day, year);
+
+			System.out.println(validation);
+
+			if (validation == true) {
+				Event newEvent = new Event(month, day, year);
+				newEvent.setTitle(title);
+				newEvent.setColor(color.toLowerCase());
+
+				Events evt = new Events();
+				evt.addEvent(newEvent);
+				int index = evt.getIndex(newEvent);
+
+				CSVReader csv = new CSVReader();
+				csv.writeData(index);
+
+				frmEvent.dispose();
+			} else {
+				eventPanel.add(invalidDateLabel);
+				invalidDateLabel.setBounds(40, 250, 150, 150);
+				eventPanel.setVisible(true);
+			}
+		}
+	}
+
+	public boolean dateChecker(int month, int date, int year) {
+		switch (month) {
+			case 2:
+				if (date >= 1 && date <= 28)
+					return true;
+				else if (date == 29){
+					if (year % 4 == 0) {
+						if (year % 100 == 0) {
+							if (year % 400 == 0)
+								return true;
+							else
+								return false;
+						} else
+							return true;
+					} else
+						return false;
+				}
+
+				break;
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12: if (date >= 1 && date <= 31)
+				return true;
+				break;
+			default: if (date >= 1 && date <= 30)
+				return true;
+
+		}
+
+		return false;
 	}
 }
