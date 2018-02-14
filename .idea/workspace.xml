@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1ac426-1530-4c52-b04c-9d039048c8ab" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/designchallenge1/ColorConverter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/designchallenge1/Subject.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/designchallenge1/SystemDateExtractor.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/CalendarProgram.iml" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/CalendarProgram.iml" />
       <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/CSVReader.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/CSVReader.class" />
@@ -27,11 +21,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/sms/SMSView.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/sms/SMSView.class" />
       <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/values/AppStrings$1.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/values/AppStrings$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/values/AppStrings.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/values/AppStrings.class" />
-      <change beforePath="$PROJECT_DIR$/src/CalendarProgram.iml" afterPath="$PROJECT_DIR$/src/CalendarProgram.iml" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/DesignChallenge1.java" afterPath="$PROJECT_DIR$/src/designchallenge1/DesignChallenge1.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/Event.java" afterPath="$PROJECT_DIR$/src/designchallenge1/Event.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/PSVReader.java" afterPath="$PROJECT_DIR$/src/designchallenge1/PSVReader.java" />
-      <change beforePath="$PROJECT_DIR$/src/sample_files/PhilippineHolidays.csv" afterPath="$PROJECT_DIR$/src/sample_files/PhilippineHolidays.csv" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -426,12 +415,20 @@
       <updated>1518615621458</updated>
       <workItem from="1518615625122" duration="683000" />
       <workItem from="1518616344435" duration="457000" />
-      <workItem from="1518616867872" duration="2896000" />
+      <workItem from="1518616867872" duration="2948000" />
     </task>
+    <task id="LOCAL-00001" summary="Implement Notifications from other apps.">
+      <created>1518619824382</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1518619824382</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4036000" />
+    <option name="totallyTimeSpent" value="4088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
@@ -470,6 +467,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implement Notifications from other apps." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Notifications from other apps." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
