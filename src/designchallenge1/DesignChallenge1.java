@@ -18,7 +18,6 @@ public class DesignChallenge1 {
         Subject s = new Subject();
 
         s.attach(fb);
-        s.setState();
         s.attach(sv);
         s.setState();
 

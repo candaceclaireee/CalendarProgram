@@ -3,24 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2f1ac426-1530-4c52-b04c-9d039048c8ab" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/CalendarProgram.iml" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/CalendarProgram.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/CSVReader.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/CSVReader.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/CalendarProgram$1.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/CalendarProgram$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/CalendarProgram.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/CalendarProgram.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/DataReader.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/DataReader.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/Date.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/Date.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/DesignChallenge1.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/DesignChallenge1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/Event.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/Event.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/EventAdder.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/EventAdder.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/Events.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/Events.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/PSVReader.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/PSVReader.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/TableRenderer.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/TableRenderer.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/facebook/FBView.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/facebook/FBView.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/sample_files/PhilippineHolidays.csv" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/sample_files/PhilippineHolidays.csv" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/sms/SMS.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/sms/SMS.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/sms/SMSView.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/sms/SMSView.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/values/AppStrings$1.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/values/AppStrings$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/values/AppStrings.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/values/AppStrings.class" />
+      <change beforePath="$PROJECT_DIR$/src/designchallenge1/DesignChallenge1.java" afterPath="$PROJECT_DIR$/src/designchallenge1/DesignChallenge1.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample_files/PhilippineHolidays.csv" afterPath="$PROJECT_DIR$/src/sample_files/PhilippineHolidays.csv" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +19,8 @@
       <file leaf-file-name="Subject.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/designchallenge1/Subject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="909">
-              <caret line="45" column="91" lean-forward="false" selection-start-line="45" selection-start-column="91" selection-end-line="45" selection-end-column="91" />
+            <state relative-caret-position="509">
+              <caret line="35" column="58" lean-forward="false" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#402#403#0" expanded="true" />
@@ -91,8 +75,8 @@
       <file leaf-file-name="DesignChallenge1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/designchallenge1/DesignChallenge1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="760">
+              <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,8 +168,8 @@
         <option value="$PROJECT_DIR$/src/designchallenge1/Event.java" />
         <option value="$PROJECT_DIR$/src/notification_libraries/sms/SMS.java" />
         <option value="$PROJECT_DIR$/src/designchallenge1/ColorConverter.java" />
-        <option value="$PROJECT_DIR$/src/designchallenge1/DesignChallenge1.java" />
         <option value="$PROJECT_DIR$/src/designchallenge1/Subject.java" />
+        <option value="$PROJECT_DIR$/src/designchallenge1/DesignChallenge1.java" />
       </list>
     </option>
   </component>
@@ -415,7 +399,7 @@
       <updated>1518615621458</updated>
       <workItem from="1518615625122" duration="683000" />
       <workItem from="1518616344435" duration="457000" />
-      <workItem from="1518616867872" duration="2955000" />
+      <workItem from="1518616867872" duration="3336000" />
     </task>
     <task id="LOCAL-00001" summary="Implement Notifications from other apps.">
       <created>1518619824382</created>
@@ -431,14 +415,22 @@
       <option name="project" value="LOCAL" />
       <updated>1518619832008</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implement Notifications from other apps.">
+      <created>1518619836852</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1518619836852</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4095000" />
+    <option name="totallyTimeSpent" value="4476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -449,11 +441,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32948294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32948294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -665,16 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/designchallenge1/DesignChallenge1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/notification_libraries/sms/SMSView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1520">
@@ -691,10 +673,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/designchallenge1/DesignChallenge1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/designchallenge1/Subject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="909">
-          <caret line="45" column="91" lean-forward="false" selection-start-line="45" selection-start-column="91" selection-end-line="45" selection-end-column="91" />
+        <state relative-caret-position="509">
+          <caret line="35" column="58" lean-forward="false" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
