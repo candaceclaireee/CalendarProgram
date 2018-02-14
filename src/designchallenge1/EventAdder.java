@@ -20,7 +20,7 @@ public class EventAdder extends JFrame implements ActionListener {
 	public JButton btnAdd;
     public JComboBox<String> cmbDay, cmbMonth, cmbYear, cmbColor;
     
-    public String[] colors = {"Green","Red","Blue", "Yellow","Orange", "Pink"};
+    public String[] colors = {"Green","Red","Blue","Orange", "Purple"};
         
     public EventAdder() {
 
@@ -131,6 +131,7 @@ public class EventAdder extends JFrame implements ActionListener {
 				csv.writeData(index);
 
 				frmEvent.dispose();
+				
 			} else {
 				eventPanel.add(invalidDateLabel);
 				invalidDateLabel.setBounds(40, 250, 150, 150);
@@ -171,7 +172,8 @@ public class EventAdder extends JFrame implements ActionListener {
 				return true;
 
 		}
-
 		return false;
 	}
+	
+	
 }

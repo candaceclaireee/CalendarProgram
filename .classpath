@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="notification_libraries/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/notification_libraries"/>
+	<classpathentry kind="output" path="SWDESPA - DC1 - Source files/Source Code/DesignChallenge1/build/classes"/>
+</classpath>

@@ -146,7 +146,6 @@ public class CalendarProgram implements ActionListener{
 				modelCalendarTable.setValueAt(i, row, column); 
 			}
 
-			ArrayList<String> colorsSet = new ArrayList<String>();
 			Events evt = new Events();  
 			
             for (int x = 0 ; x< evt.getEventsSize(); x++) {
@@ -157,17 +156,22 @@ public class CalendarProgram implements ActionListener{
             	        {
             				int row = new Integer((y+som-2)/7);
             				int column  =(y+som-2)%7;
-            				if (modelCalendarTable.getValueAt(row, column).equals(evt.getEvents().get(x).getDay())) {
-            					modelCalendarTable.setValueAt(y+"  "+ evt.getEvents().get(x).getTitle(), row, column); 
-            					colorsSet.add(Integer.toString(row));
-            					colorsSet.add(Integer.toString(column));
-            					colorsSet.add(evt.getEvents().get(x).getColor());
+            				if (modelCalendarTable.getValueAt(row, column).equals(evt.getEvents().get(x).getDay()) && calendarTable.getValueAt(row, column).toString().length() < 3 ) {
+            					String temp = "<html><font color = \"black\">  " +y+ "<font color=\"" + evt.getEvents().get(x).getColor().replaceAll(" ", "")+"\">" + " " +evt.getEvents().get(x).getTitle()+"<br></html>"; 
+            					modelCalendarTable.setValueAt(temp, row, column);
+            				}
+            				else if (calendarTable.getValueAt(row, column).toString().length() > 3 ) {
+            					if (modelCalendarTable.getValueAt(row, column).toString().contains(evt.getEvents().get(x).getDay()+"")) {
+                				String old[] = modelCalendarTable.getValueAt(row, column).toString().split("<br>"); 
+            					String appended = old[0]+ "<br><font color=\"" + evt.getEvents().get(x).getColor().replaceAll(" ", "")+"\">"+ evt.getEvents().get(x).getTitle()+"<br>" +old[1];
+            					modelCalendarTable.setValueAt(appended, row, column);
+            					}
             				}
             			}        
                 	}
             	}	
             }
-			calendarTable.setDefaultRenderer(calendarTable.getColumnClass(0), new TableRenderer(colorsSet));		
+			calendarTable.setDefaultRenderer(calendarTable.getColumnClass(0), new TableRenderer());		
 	    }
 	    
 		public void actionPerformed(ActionEvent e){
