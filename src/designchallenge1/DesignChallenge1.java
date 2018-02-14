@@ -1,5 +1,8 @@
 package designchallenge1;
 
+import facebook.FBView;
+import sms.SMSView;
+
 public class DesignChallenge1 {
 
     public static void main(String[] args) {
@@ -10,5 +13,14 @@ public class DesignChallenge1 {
     	pr.parseData();
     	
         CalendarProgram cp = new CalendarProgram();
+        FBView fb = new FBView();
+        SMSView sv = new SMSView();
+        Subject s = new Subject();
+
+        s.attach(fb);
+        s.setState();
+        s.attach(sv);
+        s.setState();
+
     }
 }

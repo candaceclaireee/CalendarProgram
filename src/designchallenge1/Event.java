@@ -25,9 +25,7 @@ public class Event {
 		this.year = year;
 	}	
 
-	public void setDay(int d){
-		this.day = d;
-	}
+	public void setDay(int d){ this.day = d; }
 	
 	public void setMonth(int m){
 		this.month = m;

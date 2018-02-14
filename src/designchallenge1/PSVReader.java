@@ -33,7 +33,7 @@ public class PSVReader extends DataReader{
 	}
 
 	public void processData() {
-		for(int i = 0; i < lines.size(); i++) {
+		for (int i = 0; i < lines.size(); i++) {
 			
 			for(int j = 0; j < lines.get(i).length; j=j+3) {
 				
