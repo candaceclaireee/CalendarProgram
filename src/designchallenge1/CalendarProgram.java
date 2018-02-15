@@ -6,23 +6,21 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
 public class CalendarProgram implements ActionListener{
 
 	    Date d = new Date();
 	
-		public JFrame frmMain;
-		public JPanel calendarPanel;
-		public Container pane;
-		public JScrollPane scrollCalendarTable;
-	    public JLabel monthLabel, yearLabel;
-		public JButton btnPrev, btnNext, newEvent;
-	    public JComboBox cmbYear;
+		private JFrame frmMain;
+		private JPanel calendarPanel;
+		private Container pane;
+		private JScrollPane scrollCalendarTable;
+		private JLabel monthLabel, yearLabel;
+		private JButton btnPrev, btnNext, newEvent, refreshBtn;
+		private JComboBox cmbYear;
 	        
-		public JTable calendarTable;
-	    public DefaultTableModel modelCalendarTable;
+		private JTable calendarTable;
+		private DefaultTableModel modelCalendarTable;
 				 
 	    public CalendarProgram() {
 
@@ -48,6 +46,7 @@ public class CalendarProgram implements ActionListener{
 			btnPrev = new JButton ("<<");
 			btnNext = new JButton (">>");
 			newEvent = new JButton ("Add Event");
+			refreshBtn = new JButton("Refresh");
 						
 			modelCalendarTable = new DefaultTableModel()
 	        {
@@ -68,6 +67,7 @@ public class CalendarProgram implements ActionListener{
 			btnNext.addActionListener(this);
 			cmbYear.addActionListener(this);
 			newEvent.addActionListener(this);
+			refreshBtn.addActionListener(this);
 			
 			pane.add(calendarPanel);
 			calendarPanel.add(monthLabel);
@@ -76,6 +76,7 @@ public class CalendarProgram implements ActionListener{
 			calendarPanel.add(btnPrev);
 			calendarPanel.add(btnNext);
 			calendarPanel.add(newEvent);
+			calendarPanel.add(refreshBtn);
 			calendarPanel.add(scrollCalendarTable);
 			
 	        calendarPanel.setBounds(0, 0, 640, 670);
@@ -84,7 +85,8 @@ public class CalendarProgram implements ActionListener{
 			cmbYear.setBounds(100, 610, 160, 40);
 			btnPrev.setBounds(20, 50, 100, 50);
 			btnNext.setBounds(520, 50, 100, 50);
-			newEvent.setBounds(460, 610,160, 45);
+			newEvent.setBounds(460, 610, 160, 45);
+			refreshBtn.setBounds(350, 610, 100 ,45);
 			scrollCalendarTable.setBounds(20, 100, 600, 500);
 	                			
 			String[] headers = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"}; //All headers
@@ -209,6 +211,9 @@ public class CalendarProgram implements ActionListener{
 			}
 			else if (src.equals(newEvent)) {
 				new EventAdder(); 
+			}
+			else if (src.equals(refreshBtn)) {
+				refreshCalendar (d.getMonthBound(), d.getYearBound()); 
 			}
 			
 		}

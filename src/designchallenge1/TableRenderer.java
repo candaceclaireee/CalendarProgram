@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
-
 public class TableRenderer extends DefaultTableCellRenderer
 {
 	public Component getTableCellRendererComponent (JTable table, Object value, boolean selected, boolean focused, int row, int column)

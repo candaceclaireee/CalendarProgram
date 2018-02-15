@@ -28,11 +28,11 @@ public class CSVReader extends DataReader {
 			
 		}catch (Exception e) {
 			e.printStackTrace();
-		}	
-		System.out.println("DATA FROM CSV FILE READ");		
+		}			
 	}
 	
 	public void processData() {
+		
 		for(int i = 0; i < lines.size(); i++) {
 			
 			for(int j = 0; j < lines.get(i).length; j=j+3) {

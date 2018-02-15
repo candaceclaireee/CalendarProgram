@@ -58,7 +58,6 @@ public class PSVReader extends DataReader{
 				Events evt = new Events(); 
 				evt.addEvent(e);
 			}
-			
 		}
 	}
 	

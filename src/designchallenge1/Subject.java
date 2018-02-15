@@ -47,7 +47,6 @@ public class Subject {
                     SMS smsEvent = new SMS(currentEvent.getTitle(), convertToCalendar, converter.convertColor(currentEvent.getColor()));
                     currentSMSView.sendSMS(smsEvent);
                 }
-
             }
         }
     }
