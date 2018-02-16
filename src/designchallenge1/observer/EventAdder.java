@@ -1,4 +1,6 @@
-package designchallenge1;
+package designchallenge1.observer;
+
+import designchallenge1.template.CSVDataParser;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,7 +11,8 @@ import javax.swing.*;
 public class EventAdder extends JFrame implements ActionListener {
 
     Date d = new Date();
-    
+    Subject sub;
+
 	public JFrame frmEvent;
 	public JPanel eventPanel;
 	public Container pane;
@@ -32,7 +35,12 @@ public class EventAdder extends JFrame implements ActionListener {
     	
     	init();
     }
-    
+
+    public EventAdder(Subject sub) {
+    	this();
+    	this.sub = sub;
+	}
+
     public void init() {
 
 		pane = frmEvent.getContentPane();
@@ -119,7 +127,7 @@ public class EventAdder extends JFrame implements ActionListener {
 			System.out.println(validation);
 
 			if (validation == true) {
-				Event newEvent = new Event(month, day, year);
+				designchallenge1.observer.Event newEvent = new Event(month, day, year);
 				newEvent.setTitle(title);
 				newEvent.setColor(color.toLowerCase());
 
@@ -127,9 +135,10 @@ public class EventAdder extends JFrame implements ActionListener {
 				evt.addEvent(newEvent);
 				int index = evt.getIndex(newEvent);
 
-				CSVReader csv = new CSVReader();
+				CSVDataParser csv = new CSVDataParser();
 				csv.writeData(index);
 
+				sub.setState();
 				frmEvent.dispose();
 				
 			} else {
@@ -137,6 +146,7 @@ public class EventAdder extends JFrame implements ActionListener {
 				invalidDateLabel.setBounds(40, 250, 150, 150);
 				eventPanel.setVisible(true);
 			}
+
 		}
 	}
 

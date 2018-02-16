@@ -1,4 +1,4 @@
-package designchallenge1;
+package designchallenge1.observer;
 
 import java.time.LocalDate;
 

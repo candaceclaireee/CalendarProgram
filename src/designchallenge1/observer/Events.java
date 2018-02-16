@@ -1,28 +1,28 @@
-package designchallenge1;
+package designchallenge1.observer;
 
 import java.util.ArrayList;
 
-public class Events{
+public class Events {
 
 	private static ArrayList<Event> events = new ArrayList<Event>();
-	
+
 	public void addEvent(Event e)
 	{
 		events.add(e);
 	}
-	
+
 	public ArrayList<Event> getEvents(){
 		return events;
 	}
-	
+
 	public int getEventsSize() {
 		return events.size();
 	}
-	
+
 	public int getIndex(Event e) {
 		return events.indexOf(e);
 	}
-	
+
 	public void printEvents() {
 		for (int i = 0; i<events.size(); i++)
 		{

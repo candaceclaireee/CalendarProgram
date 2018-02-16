@@ -1,9 +1,12 @@
-package designchallenge1;
+package designchallenge1.template;
+
+import designchallenge1.observer.Event;
+import designchallenge1.observer.Events;
 
 import java.util.*;
 import java.io.*;
 
-public class CSVReader extends DataReader {
+public class CSVDataParser extends DataParser {
 
 	static ArrayList<String[]> lines = new ArrayList<String[]>();
 	static Events events = new Events();
@@ -28,7 +31,8 @@ public class CSVReader extends DataReader {
 			
 		}catch (Exception e) {
 			e.printStackTrace();
-		}			
+		}
+		System.out.println("DATA FROM CSV FILE READ");
 	}
 	
 	public void processData() {

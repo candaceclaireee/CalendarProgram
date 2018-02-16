@@ -1,6 +1,6 @@
 package facebook;
 
-import java.awt.Color;
+import java.awt.*;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -11,6 +11,7 @@ import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyleContext;
+
 import values.AppStrings;
 
 public class FBView extends JFrame{

@@ -1,6 +1,6 @@
-package designchallenge1;
+package designchallenge1.template;
 
-public abstract class DataReader {
+public abstract class DataParser {
 	
 	public void parseData() {
 		readData(); 

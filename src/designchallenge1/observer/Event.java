@@ -1,7 +1,7 @@
-package designchallenge1;
+package designchallenge1.observer;
 
 public class Event {
-	public static int numOfEvents; 
+	private static int numOfEvents;
 	
 	private int year;
 	private int month;
@@ -9,7 +9,9 @@ public class Event {
 
 	private String title;
 	private String color;
-	
+
+	private boolean notified;
+
 	public Event(int month, int day, int year){
 		numOfEvents++;
 		
@@ -17,6 +19,8 @@ public class Event {
 				
 		color = "Blue"; //DEFAULT
 		title = ""; //DEFAULT
+
+		notified = false;
 	}
 
 	public void setDate(int month, int day, int year){
@@ -68,5 +72,11 @@ public class Event {
 		return color;
 	}
 
-	
+	public boolean getStatus() {
+		return notified;
+	}
+
+	public void setStatus(boolean status) {
+		notified = status;
+	}
 }

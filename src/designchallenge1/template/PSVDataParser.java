@@ -1,9 +1,12 @@
-package designchallenge1;
+package designchallenge1.template;
+
+import designchallenge1.observer.Event;
+import designchallenge1.observer.Events;
 
 import java.io.*;
 import java.util.*;
 
-public class PSVReader extends DataReader{
+public class PSVDataParser extends DataParser {
 
 	static ArrayList<String[]> lines = new ArrayList<String[]>();
 	
@@ -55,7 +58,7 @@ public class PSVReader extends DataReader{
 			    e.setTitle(lines.get(i)[j]);
 			    e.setColor(lines.get(i)[j+2]);	
 
-				Events evt = new Events(); 
+				Events evt = new Events();
 				evt.addEvent(e);
 			}
 		}
