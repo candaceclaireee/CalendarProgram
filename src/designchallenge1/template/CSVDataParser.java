@@ -8,10 +8,10 @@ import java.io.*;
 
 public class CSVDataParser extends DataParser {
 
-	private static ArrayList<String[]> lines = new ArrayList<String[]>();
 	private static Events events = new Events();
 	
 	public void readData(){
+		lines =  new ArrayList<String[]>();
 		try {
 			File f = new File("src\\sample_files\\PhilippineHolidays.csv");
 			FileReader fr = new FileReader(f);

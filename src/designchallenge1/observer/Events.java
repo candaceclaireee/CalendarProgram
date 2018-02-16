@@ -6,8 +6,7 @@ public class Events {
 
 	private static ArrayList<Event> events = new ArrayList<Event>();
 
-	public void addEvent(Event e)
-	{
+	public void addEvent(Event e){
 		events.add(e);
 	}
 

@@ -4,6 +4,11 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Subject {
+
+    private ArrayList<Observer> observers;
+    private Events eventData;
+    private static int currentNumEvents;
+    
     public Subject() {
         observers = new ArrayList<Observer>();
         eventData = new Events();
@@ -40,8 +45,4 @@ public class Subject {
     public void updateNumEvents() {
         currentNumEvents = eventData.getEventsSize();
     }
-
-    private ArrayList<Observer> observers;
-    private Events eventData;
-    private static int currentNumEvents;
 }

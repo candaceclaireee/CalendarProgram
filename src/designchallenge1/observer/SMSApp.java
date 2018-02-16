@@ -16,7 +16,6 @@ public class SMSApp extends Observer {
 
     @Override
     public void update() {
-        //get something sa subject
         DateExtractor d = new DateExtractor();
         ColorConverter converter = new ColorConverter();
         d.extractSystem(LocalDate.now());

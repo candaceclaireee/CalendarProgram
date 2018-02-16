@@ -4,6 +4,11 @@ import java.time.LocalDate;
 
 public class DateExtractor {
 
+
+    private int month;
+    private int day;
+    private int year;
+	
     public void extractSystem(LocalDate systemDate) {
         String[] tempDate = systemDate.toString().split("-");
 
@@ -24,8 +29,4 @@ public class DateExtractor {
     public int getYear() {
         return year;
     }
-
-    private int month;
-    private int day;
-    private int year;
 }

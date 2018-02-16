@@ -8,10 +8,10 @@ import java.util.*;
 
 public class PSVDataParser extends DataParser {
 
-	static ArrayList<String[]> lines = new ArrayList<String[]>();
 	
 	public void readData() {
 		try {
+			lines =  new ArrayList<String[]>();
 			File f = new File("src\\sample_files\\DLSU Unicalendar.psv");
 			FileReader fr = new FileReader(f);
 			BufferedReader br = new BufferedReader(fr);

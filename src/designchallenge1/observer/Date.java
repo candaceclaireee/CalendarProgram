@@ -6,11 +6,6 @@ import java.util.GregorianCalendar;
 public class Date {
 
 	    private static int yearBound, monthBound, dayBound, yearToday, monthToday;
-
-	    private int sysMonth;
-	    private int sysDay;
-	    private int sysYear;
-	   
 	    
 	    public Date(){
 			GregorianCalendar cal = new GregorianCalendar();
@@ -60,16 +55,4 @@ public class Date {
 		public void setMonthToday(int monthToday) {
 			this.monthToday = monthToday;
 		}
-		
-	    public int getsysMonth() {
-	        return sysMonth;
-	    }
-
-	    public int getsysDay() {
-	        return sysDay;
-	    }
-
-	    public int getsysYear() {
-	        return sysYear;
-	    }
 }
