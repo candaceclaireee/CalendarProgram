@@ -17,12 +17,12 @@ public class SMSApp extends Observer {
     @Override
     public void update() {
         //get something sa subject
-        SystemDateExtractor s = new SystemDateExtractor();
+        DateExtractor d = new DateExtractor();
         ColorConverter converter = new ColorConverter();
-        s.extractSystem(LocalDate.now());
+        d.extractSystem(LocalDate.now());
 
         for (Event currentEvent : sub.getData().getEvents()) {
-            if (s.getMonth() == currentEvent.getMonth() && s.getDay() == currentEvent.getDay() && s.getYear() == currentEvent.getYear()
+            if (d.getMonth() == currentEvent.getMonth() && d.getDay() == currentEvent.getDay() && d.getYear() == currentEvent.getYear()
                     && currentEvent.getStatus() == false) {
                 Calendar convertToCalendar = Calendar.getInstance();
                 convertToCalendar.set(currentEvent.getYear(), currentEvent.getMonth() - 1, currentEvent.getDay());

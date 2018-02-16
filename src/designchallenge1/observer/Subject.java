@@ -1,12 +1,7 @@
 package designchallenge1.observer;
 
-import facebook.FBView;
-import sms.SMS;
-import sms.SMSView;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Calendar;
 
 public class Subject {
     public Subject() {
@@ -23,7 +18,7 @@ public class Subject {
         for (Observer o: observers)
             o.update();
 
-        SystemDateExtractor s = new SystemDateExtractor();
+        DateExtractor s = new DateExtractor();
         s.extractSystem(LocalDate.now());
 
         for (Event currentEvent: eventData.getEvents()) {

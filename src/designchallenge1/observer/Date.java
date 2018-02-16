@@ -72,15 +72,4 @@ public class Date {
 	    public int getsysYear() {
 	        return sysYear;
 	    }
-
-	    public void extractSystem(LocalDate systemDate) {
-	        String[] tempDate = systemDate.toString().split("-");
-
-	        sysYear = Integer.parseInt(tempDate[0]);
-	        sysMonth = Integer.parseInt(tempDate[1]);
-	        sysDay = Integer.parseInt(tempDate[2]);
-
-	    }
-
-	    
 }

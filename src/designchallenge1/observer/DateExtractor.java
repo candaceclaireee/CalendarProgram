@@ -2,7 +2,7 @@ package designchallenge1.observer;
 
 import java.time.LocalDate;
 
-public class SystemDateExtractor {
+public class DateExtractor {
 
     public void extractSystem(LocalDate systemDate) {
         String[] tempDate = systemDate.toString().split("-");
