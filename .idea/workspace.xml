@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f1ac426-1530-4c52-b04c-9d039048c8ab" name="Default" comment="&quot;Designed&quot;&#10;Can now notify to other apps.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/FBApp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/Observer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/SMSApp.java" />
+    <list default="true" id="2f1ac426-1530-4c52-b04c-9d039048c8ab" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/CSVReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/CalendarProgram$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/CalendarProgram.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/DataReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/Date.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/DesignChallenge1.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/DesignChallenge1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/Event.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/EventAdder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/Events.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/PSVReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/designchallenge1/TableRenderer.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/facebook/FBView.class" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/facebook/FBView.class" />
       <change beforePath="$PROJECT_DIR$/out/production/CalendarProgram/sample_files/PhilippineHolidays.csv" afterPath="$PROJECT_DIR$/out/production/CalendarProgram/sample_files/PhilippineHolidays.csv" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/CSVReader.java" afterPath="$PROJECT_DIR$/src/designchallenge1/template/CSVDataParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/CalendarProgram.java" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/CalendarProgram.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/ColorConverter.java" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/ColorConverter.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/DataReader.java" afterPath="$PROJECT_DIR$/src/designchallenge1/template/DataParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/Date.java" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/Date.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/DesignChallenge1.java" afterPath="$PROJECT_DIR$/src/designchallenge1/DesignChallenge1.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/Event.java" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/Event.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/EventAdder.java" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/EventAdder.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/Events.java" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/Events.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/PSVReader.java" afterPath="$PROJECT_DIR$/src/designchallenge1/template/PSVDataParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/Subject.java" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/Subject.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/SystemDateExtractor.java" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/SystemDateExtractor.java" />
-      <change beforePath="$PROJECT_DIR$/src/designchallenge1/TableRenderer.java" afterPath="$PROJECT_DIR$/src/designchallenge1/observer/TableRenderer.java" />
-      <change beforePath="$PROJECT_DIR$/src/notification_libraries/facebook/FBView.java" afterPath="$PROJECT_DIR$/src/notification_libraries/facebook/FBView.java" />
-      <change beforePath="$PROJECT_DIR$/src/sample_files/PhilippineHolidays.csv" afterPath="$PROJECT_DIR$/src/sample_files/PhilippineHolidays.csv" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,16 +25,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventAdder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/designchallenge1/observer/EventAdder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="140" column="29" lean-forward="false" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -103,13 +65,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Date.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Date.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/designchallenge1/observer/Date.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="369">
               <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
               <folding>
                 <element signature="e#599#600#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FBApp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/designchallenge1/observer/FBApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="729">
+              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -272,34 +246,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="designchallenge1" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalendarProgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="notification_libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalendarProgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="notification_libraries" type="462c0819:PsiDirectoryNode" />
-              <item name="facebook" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalendarProgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="notification_libraries" type="462c0819:PsiDirectoryNode" />
-              <item name="sms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalendarProgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="notification_libraries" type="462c0819:PsiDirectoryNode" />
-              <item name="values" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalendarProgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample_files" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -577,7 +523,7 @@
       <workItem from="1518616867872" duration="4105000" />
       <workItem from="1518657917008" duration="3798000" />
       <workItem from="1518684287149" duration="862000" />
-      <workItem from="1518710307877" duration="24062000" />
+      <workItem from="1518710307877" duration="24104000" />
     </task>
     <task id="LOCAL-00001" summary="Implement Notifications from other apps.">
       <created>1518619824382</created>
@@ -607,15 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1518620222111</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&quot;Designed&quot;&#10;Can now notify to other apps.">
+      <created>1518775463697</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1518775463697</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33967000" />
+    <option name="totallyTimeSpent" value="34009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -630,7 +582,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1017,16 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/designchallenge1/observer/FBApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="21" column="56" lean-forward="false" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/designchallenge1/observer/Subject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1130,6 +1072,16 @@
           <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding>
             <element signature="e#599#600#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/designchallenge1/observer/FBApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
