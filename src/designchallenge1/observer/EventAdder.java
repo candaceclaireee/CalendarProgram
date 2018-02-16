@@ -124,8 +124,6 @@ public class EventAdder extends JFrame implements ActionListener {
 
 			boolean validation = dateChecker(month, day, year);
 
-			System.out.println(validation);
-
 			if (validation == true) {
 				designchallenge1.observer.Event newEvent = new Event(month, day, year);
 				newEvent.setTitle(title);

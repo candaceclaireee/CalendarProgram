@@ -26,7 +26,22 @@ public class CSVDataParser extends DataParser {
 			
 				curLine = br.readLine();
 			}
-			
+
+			f = new File("src\\sample_files\\UserEvents.csv");
+			fr = new FileReader(f);
+			br = new BufferedReader(fr);
+
+			curLine = br.readLine();
+
+			while(curLine != null) {
+
+				String line[] = curLine.split(",");
+				lines.add(line);
+
+				curLine = br.readLine();
+			}
+
+
 			br.close();
 			
 		}catch (Exception e) {
@@ -63,7 +78,7 @@ public class CSVDataParser extends DataParser {
 	
 	public static void writeData(int index) {
 
-		String filepath = "src\\sample_files\\PhilippineHolidays.csv";
+		String filepath = "src\\sample_files\\UserEvents.csv";
 		BufferedWriter bw = null;
 		BufferedReader br = null;
 		String line = null;
