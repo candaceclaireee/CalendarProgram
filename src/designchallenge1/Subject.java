@@ -26,14 +26,13 @@ public class Subject {
 
     public void setState() {
         ArrayList<Event> currentEvents = eventData.getEvents();
-        SystemDateExtractor s = new SystemDateExtractor();
         ColorConverter converter = new ColorConverter();
-        s.extractSystem(LocalDate.now());
-
+        Date d = new Date();
+        d.extractSystem(LocalDate.now());
 
         for (FBView currentFBView : fbViewApps) {
             for (Event currentEvent: eventData.getEvents()) {
-                if (s.getMonth() == currentEvent.getMonth() && s.getDay() == currentEvent.getDay() && s.getYear() == currentEvent.getYear())
+                if (d.getsysMonth() == currentEvent.getMonth() && d.getsysDay() == currentEvent.getDay() && d.getsysYear() == currentEvent.getYear())
                     currentFBView.showNewEvent(currentEvent.getTitle(), currentEvent.getMonth(),
                             currentEvent.getDay(), currentEvent.getYear(), converter.convertColor(currentEvent.getColor()));
             }
@@ -41,7 +40,7 @@ public class Subject {
 
         for (SMSView currentSMSView : smsApps) {
             for (Event currentEvent: eventData.getEvents()) {
-                if (s.getMonth() == currentEvent.getMonth() && s.getDay() == currentEvent.getDay() && s.getYear() == currentEvent.getYear()) {
+                if (d.getsysMonth() == currentEvent.getMonth() && d.getsysDay() == currentEvent.getDay() && d.getsysYear() == currentEvent.getYear()) {
                     Calendar convertToCalendar = Calendar.getInstance();
                     convertToCalendar.set(currentEvent.getYear(), currentEvent.getMonth()-1, currentEvent.getDay());
                     SMS smsEvent = new SMS(currentEvent.getTitle(), convertToCalendar, converter.convertColor(currentEvent.getColor()));
