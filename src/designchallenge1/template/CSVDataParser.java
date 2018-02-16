@@ -8,8 +8,8 @@ import java.io.*;
 
 public class CSVDataParser extends DataParser {
 
-	static ArrayList<String[]> lines = new ArrayList<String[]>();
-	static Events events = new Events();
+	private static ArrayList<String[]> lines = new ArrayList<String[]>();
+	private static Events events = new Events();
 	
 	public void readData(){
 		try {
