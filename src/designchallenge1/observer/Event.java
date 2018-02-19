@@ -1,7 +1,6 @@
 package designchallenge1.observer;
 
 public class Event {
-	private static int numOfEvents;
 	
 	private int year;
 	private int month;
@@ -13,13 +12,11 @@ public class Event {
 	private boolean notified;
 
 	public Event(int month, int day, int year){
-		numOfEvents++;
 		
 		setDate(month, day, year);
 				
-		color = "Blue"; //DEFAULT
-		title = ""; //DEFAULT
-
+		color = "Blue"; 
+		title = ""; 
 		notified = false;
 	}
 
@@ -29,7 +26,9 @@ public class Event {
 		this.year = year;
 	}	
 
-	public void setDay(int d){ this.day = d; }
+	public void setDay(int d){ 
+		this.day = d; 
+    }
 	
 	public void setMonth(int m){
 		this.month = m;
@@ -45,11 +44,6 @@ public class Event {
 	
 	public void setColor(String c) {
 		this.color = c;
-	}
-	
-	
-	public int getNumOfEvents(){
-		return numOfEvents;
 	}
 	
 	public int getDay(){

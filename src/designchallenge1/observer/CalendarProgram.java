@@ -23,20 +23,9 @@ public class CalendarProgram implements ActionListener{
 	private Date d = new Date();
 	private Subject sub;
 
-	public CalendarProgram() {
-
-		frmMain = new JFrame ("Calendar Application");
-		frmMain.setSize(660, 750);
-		frmMain.setResizable(false);
-		frmMain.setVisible(true);
-		frmMain.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		init();
-	}
-
 	public CalendarProgram(Subject sub) {
-		this();
 		this.sub = sub;
+		init();
 	}
 
 	public void init() {
@@ -44,6 +33,12 @@ public class CalendarProgram implements ActionListener{
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e) {}
 
+		frmMain = new JFrame ("Calendar Application");
+		frmMain.setSize(660, 750);
+		frmMain.setResizable(false);
+		frmMain.setVisible(true);
+		frmMain.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 		pane = frmMain.getContentPane();
 		pane.setLayout(null);
 		monthLabel = new JLabel ("January");
@@ -147,15 +142,13 @@ public class CalendarProgram implements ActionListener{
 		nod = cal.getActualMaximum(GregorianCalendar.DAY_OF_MONTH);
 		som = cal.get(GregorianCalendar.DAY_OF_WEEK);
 
-		for (i = 1; i <= nod; i++)
-		{
+		for (i = 1; i <= nod; i++){
 			int row = new Integer((i+som-2)/7);
 			int column  =  (i+som-2)%7;
 			modelCalendarTable.setValueAt(i, row, column);
 		}
 
 		Events evt = new Events();
-
 		for (int x = 0 ; x < evt.getEventsSize(); x++) {
 			if (evt.getEvents().get(x).getYear() == year){
 				if (evt.getEvents().get(x).getMonth() == month+1) {
@@ -166,10 +159,10 @@ public class CalendarProgram implements ActionListener{
 						int column  =(y+som-2)%7;
 						if (modelCalendarTable.getValueAt(row, column).equals(evt.getEvents().get(x).getDay()) && calendarTable.getValueAt(row, column).toString().length() < 3 ) {
 							String temp = "<html><font color = \"black\">  " +y+ "<font color=\"" + evt.getEvents().get(x).getColor().replaceAll(" ", "")+"\">" + " " +evt.getEvents().get(x).getTitle()+"<br></html>";
-							modelCalendarTable.setValueAt(temp, row, column);
+							modelCalendarTable.setValueAt(temp, row, column); 
 						}
-						else if (calendarTable.getValueAt(row, column).toString().length() > 3 ) {
-							if (modelCalendarTable.getValueAt(row, column).toString().contains(evt.getEvents().get(x).getDay()+"")) {
+						else if (calendarTable.getValueAt(row, column).toString().length() > 3 ) { 
+							if (modelCalendarTable.getValueAt(row, column).toString().contains(" "+evt.getEvents().get(x).getDay()+"") ) { 
 								String old[] = modelCalendarTable.getValueAt(row, column).toString().split("<br>");
 								String appended = old[0]+ "<br><font color=\"" + evt.getEvents().get(x).getColor().replaceAll(" ", "")+"\">"+ evt.getEvents().get(x).getTitle()+"<br>" +old[1];
 								modelCalendarTable.setValueAt(appended, row, column);
@@ -179,7 +172,6 @@ public class CalendarProgram implements ActionListener{
 				}
 			}
 		}
-
 		calendarTable.setDefaultRenderer(calendarTable.getColumnClass(0), new TableRenderer());
 	}
 
@@ -227,7 +219,6 @@ public class CalendarProgram implements ActionListener{
 		}
 		else if (src.equals(refreshBtn)) {
 			refreshCalendar (d.getMonthBound(), d.getYearBound());
-
 
 			if (sub != null)
 				sub.setState();

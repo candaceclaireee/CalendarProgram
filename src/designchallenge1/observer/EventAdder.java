@@ -13,36 +13,31 @@ public class EventAdder extends JFrame implements ActionListener {
     Date d = new Date();
     Subject sub;
 
-	public JFrame frmEvent;
-	public JPanel eventPanel;
-	public Container pane;
+	private JFrame frmEvent;
+	private JPanel eventPanel;
+	private Container pane;
 	
-    public JTextField titleField;
-	public JLabel titleLabel, dateLabel, colorLabel, invalidDateLabel, noTitleLabel;
+	private JTextField titleField;
+	private JLabel titleLabel, dateLabel, colorLabel, invalidDateLabel, noTitleLabel;
 	
-	public JButton btnAdd;
-    public JComboBox<String> cmbDay, cmbMonth, cmbYear, cmbColor;
+	private JButton btnAdd;
+	private JComboBox<String> cmbDay, cmbMonth, cmbYear, cmbColor;
     
-    public String[] colors = {"Green","Red","Blue","Orange", "Purple"};
+	private String[] colors = {"Green","Red","Blue","Orange", "Purple"};
         
-    public EventAdder() {
+    public EventAdder(Subject sub) {
+    	this.sub = sub;
+    	init();
+	}
+
+    public void init() {
 
     	frmEvent = new JFrame ("Add New Event");
     	frmEvent.setSize(400, 450);
     	frmEvent.setResizable(false);
     	frmEvent.setVisible(true);
     	frmEvent.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    	
-    	init();
-    }
-
-    public EventAdder(Subject sub) {
-    	this();
-    	this.sub = sub;
-	}
-
-    public void init() {
-
+    	    	
 		pane = frmEvent.getContentPane();
 		pane.setLayout(null);
 		
@@ -182,6 +177,5 @@ public class EventAdder extends JFrame implements ActionListener {
 		}
 		return false;
 	}
-	
 	
 }
