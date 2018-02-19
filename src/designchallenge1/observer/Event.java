@@ -15,9 +15,8 @@ public class Event {
 		
 		setDate(month, day, year);
 				
-		color = "Blue"; //DEFAULT
-		title = ""; //DEFAULT
-
+		color = "Blue"; 
+		title = ""; 
 		notified = false;
 	}
 

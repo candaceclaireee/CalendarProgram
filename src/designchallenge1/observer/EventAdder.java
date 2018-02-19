@@ -25,7 +25,6 @@ public class EventAdder extends JFrame implements ActionListener {
     
 	private String[] colors = {"Green","Red","Blue","Orange", "Purple"};
         
-   
     public EventAdder(Subject sub) {
     	this.sub = sub;
     	init();
@@ -178,6 +177,5 @@ public class EventAdder extends JFrame implements ActionListener {
 		}
 		return false;
 	}
-	
 	
 }

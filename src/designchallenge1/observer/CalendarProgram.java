@@ -142,15 +142,13 @@ public class CalendarProgram implements ActionListener{
 		nod = cal.getActualMaximum(GregorianCalendar.DAY_OF_MONTH);
 		som = cal.get(GregorianCalendar.DAY_OF_WEEK);
 
-		for (i = 1; i <= nod; i++)
-		{
+		for (i = 1; i <= nod; i++){
 			int row = new Integer((i+som-2)/7);
 			int column  =  (i+som-2)%7;
 			modelCalendarTable.setValueAt(i, row, column);
 		}
 
 		Events evt = new Events();
-
 		for (int x = 0 ; x < evt.getEventsSize(); x++) {
 			if (evt.getEvents().get(x).getYear() == year){
 				if (evt.getEvents().get(x).getMonth() == month+1) {
@@ -174,7 +172,6 @@ public class CalendarProgram implements ActionListener{
 				}
 			}
 		}
-
 		calendarTable.setDefaultRenderer(calendarTable.getColumnClass(0), new TableRenderer());
 	}
 
@@ -222,7 +219,6 @@ public class CalendarProgram implements ActionListener{
 		}
 		else if (src.equals(refreshBtn)) {
 			refreshCalendar (d.getMonthBound(), d.getYearBound());
-
 
 			if (sub != null)
 				sub.setState();

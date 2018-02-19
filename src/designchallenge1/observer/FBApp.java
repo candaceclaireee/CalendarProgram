@@ -24,6 +24,5 @@ public class FBApp extends Observer {
                         currentEvent.getDay(), currentEvent.getYear(), converter.convertColor(currentEvent.getColor()));
         }
     }
-
     private FBView app;
 }

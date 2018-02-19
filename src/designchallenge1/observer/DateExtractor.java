@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 public class DateExtractor {
 
-
     private int month;
     private int day;
     private int year;
@@ -15,7 +14,6 @@ public class DateExtractor {
         year = Integer.parseInt(tempDate[0]);
         month = Integer.parseInt(tempDate[1]);
         day = Integer.parseInt(tempDate[2]);
-
     }
 
     public int getMonth() {
