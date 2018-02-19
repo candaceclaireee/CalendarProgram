@@ -7,9 +7,6 @@ import java.util.*;
 import java.io.*;
 
 public class CSVDataParser extends DataParser {
-
-	private static ArrayList<String[]> lines = new ArrayList<String[]>();
-	private static Events events = new Events();
 	
 	public void readData(){
 		try {
@@ -74,15 +71,15 @@ public class CSVDataParser extends DataParser {
 			}
 		}
 	}	
-	
-	
+
 	public static void writeData(int index) {
 
 		String filepath = "src\\sample_files\\UserEvents.csv";
 		BufferedWriter bw = null;
 		BufferedReader br = null;
 		String line = null;
-		
+		Events events = new Events();
+
 		try {
 			FileWriter fw = new FileWriter(filepath, true);
 			bw = new BufferedWriter(fw);

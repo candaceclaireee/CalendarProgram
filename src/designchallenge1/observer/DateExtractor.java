@@ -7,25 +7,25 @@ public class DateExtractor {
     public void extractSystem(LocalDate systemDate) {
         String[] tempDate = systemDate.toString().split("-");
 
-        year = Integer.parseInt(tempDate[0]);
-        month = Integer.parseInt(tempDate[1]);
-        day = Integer.parseInt(tempDate[2]);
+        extractedYear = Integer.parseInt(tempDate[0]);
+        extractedMonth = Integer.parseInt(tempDate[1]);
+        extractedDay = Integer.parseInt(tempDate[2]);
 
     }
 
     public int getMonth() {
-        return month;
+        return extractedMonth;
     }
 
     public int getDay() {
-        return day;
+        return extractedDay;
     }
 
     public int getYear() {
-        return year;
+        return  extractedYear;
     }
 
-    private int month;
-    private int day;
-    private int year;
+    private int extractedMonth;
+    private int extractedDay;
+    private int extractedYear;
 }

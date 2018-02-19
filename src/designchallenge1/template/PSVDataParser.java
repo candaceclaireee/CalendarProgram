@@ -7,8 +7,6 @@ import java.io.*;
 import java.util.*;
 
 public class PSVDataParser extends DataParser {
-
-	static ArrayList<String[]> lines = new ArrayList<String[]>();
 	
 	public void readData() {
 		try {
